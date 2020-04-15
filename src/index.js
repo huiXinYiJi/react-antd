@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import './styles/index.less';
+import Admin from './Admin';
+// import IRouter from '@/pages/route_demo/router2/router';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  // <React.StrictMode>
+    <Admin />,
+  // </React.StrictMode>,
   document.getElementById('root')
 );
 
