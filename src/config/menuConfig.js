@@ -17,7 +17,19 @@ export default [
       },
       {
         title: 'Loading',
-        key: '/admin/ui/loading'
+        key: '/admin/ui/loadings'
+      },
+      {
+        title: '通知提醒',
+        key: '/admin/ui/notification'
+      },
+      {
+        title: '全局message',
+        key: '/admin/ui/message'
+      },
+      {
+        title: 'Tab页签',
+        key: '/admin/ui/tab'
       }
     ]
   }

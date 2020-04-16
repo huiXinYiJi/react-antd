@@ -80,11 +80,16 @@ a:focus, a:active {
 .container {
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
+  &.ant-row {
+    flex-wrap: nowrap;
+  }
   .nav-left {
     min-width: 180px;
     background-color: @navLeftBg;
   }
   .main {
+    height: 100vh;
     background-color: @contentBg;
   }
   .content {
@@ -92,5 +97,10 @@ a:focus, a:active {
     padding: 20px;
     height: calc(100% - 200px);
     background-color: @contentBg;
+    overflow-y: scroll;
+    width: calc(100% + 20px);
+    .content-wrap {
+      width: 100%;
+    }
   }
 }

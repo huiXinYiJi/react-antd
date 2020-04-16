@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Menu } from 'antd'
+import { NavLink } from 'react-router-dom'
 import { WindowsOutlined } from '@ant-design/icons'
 import MenuConfig from '@/config/menuConfig'
 import './index.less'
@@ -29,7 +30,9 @@ class NavLeft extends Component {
           </SubMenu>
         )
       }
-      return <Menu.Item key={item.key}><span>{item.title}</span></Menu.Item>
+      return <Menu.Item key={item.key}>
+        <NavLink to={item.key}>{item.title}</NavLink>
+      </Menu.Item>
     })
   }
 
