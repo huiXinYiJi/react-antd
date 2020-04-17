@@ -32,5 +32,15 @@ export default [
         key: '/admin/ui/tab'
       }
     ]
+  },
+  {
+    title: 'Form表单',
+    key: '/admin/form',
+    children: [
+      {
+        title: '登录表单',
+        key: '/admin/form/login'
+      }
+    ]
   }
 ]

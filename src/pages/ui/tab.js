@@ -11,7 +11,6 @@ class Tab extends Component {
     message['info'](key)
   }
   render() {
-    console.log(this.props)
     return(
       <div className="content-wrap">
         <Card title="Tab页签" className="card-wrap">
