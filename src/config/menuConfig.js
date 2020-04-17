@@ -40,6 +40,10 @@ export default [
       {
         title: '登录表单',
         key: '/admin/form/login'
+      },
+      {
+        title: '注册表单',
+        key: '/admin/form/reg'
       }
     ]
   }

@@ -10,6 +10,7 @@ import Notice from '@/pages/ui/notification'
 import Msg from '@/pages/ui/msg'
 import Tab from '@/pages/ui/tab'
 import FormLogin from '@/pages/form/login'
+import Reg from '@/pages/form/reg'
 import NoMatch from '@/pages/noMatch'
 
 export default class IRouter extends React.Component {
@@ -29,6 +30,7 @@ export default class IRouter extends React.Component {
                 <Route path="/admin/ui/message" component={Msg}></Route>
                 <Route path="/admin/ui/tab" component={Tab}></Route>
                 <Route path="/admin/form/login" component={FormLogin}></Route>
+                <Route path="/admin/form/reg" component={Reg}></Route>
                 <Route path="*" component={NoMatch}></Route>
               </Switch>
             </Admin>
