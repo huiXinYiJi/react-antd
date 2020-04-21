@@ -46,5 +46,15 @@ export default [
         key: '/admin/form/reg'
       }
     ]
+  },
+  {
+    title: '表格',
+    key: '/admin/table',
+    children: [
+      {
+        title: '基础表格',
+        key: '/admin/table/basic'
+      }
+    ]
   }
 ]

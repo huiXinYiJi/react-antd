@@ -11,6 +11,7 @@ import Msg from '@/pages/ui/msg'
 import Tab from '@/pages/ui/tab'
 import FormLogin from '@/pages/form/login'
 import Reg from '@/pages/form/reg'
+import BasicTable from '@/pages/table/basicTable'
 import NoMatch from '@/pages/noMatch'
 
 export default class IRouter extends React.Component {
@@ -31,6 +32,7 @@ export default class IRouter extends React.Component {
                 <Route path="/admin/ui/tab" component={Tab}></Route>
                 <Route path="/admin/form/login" component={FormLogin}></Route>
                 <Route path="/admin/form/reg" component={Reg}></Route>
+                <Route path="/admin/table/basic" component={BasicTable}></Route>
                 <Route path="*" component={NoMatch}></Route>
               </Switch>
             </Admin>
