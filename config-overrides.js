@@ -3,6 +3,10 @@
 const { override, fixBabelImports, addLessLoader, addWebpackAlias } = require('customize-cra')
 const path = require('path')
 
+// 修改打包目录
+const paths = require('react-scripts/config/paths')
+paths.appBuild = path.join(path.dirname(paths.appBuild), 'dist')
+
 // 关闭sourcemap
 process.env.GENERATE_SOURCEMAP = 'false'
 

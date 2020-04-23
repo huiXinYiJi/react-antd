@@ -1,8 +1,9 @@
 import React from 'react'
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { HashRouter, Route, Switch, Redirect } from 'react-router-dom'
 import App from './App'
-import Login from '@/pages/login'
 import Admin from './Admin'
+import Home from '@/pages/home'
+import Login from '@/pages/login'
 import Buttons from '@/pages/ui/buttons.js'
 import Modals from '@/pages/ui/modals'
 import Loadings from '@/pages/ui/loadings'
@@ -18,12 +19,16 @@ export default class IRouter extends React.Component {
 
   render() {
     return (
-      <BrowserRouter>
+      <HashRouter>
         <App>
           <Route path="/login" component={Login}></Route>
+          <Route exact path="/">
+            <Redirect to="/admin/home" />
+          </Route>
           <Route path="/admin" render={() =>
             <Admin>
               <Switch>
+                <Route path="/admin/home" component={Home} />
                 <Route path="/admin/ui/buttons" component={Buttons}></Route>
                 <Route path="/admin/ui/modals" component={Modals}></Route>
                 <Route path="/admin/ui/loadings" component={Loadings}></Route>
@@ -38,7 +43,7 @@ export default class IRouter extends React.Component {
             </Admin>
           }></Route>
         </App>
-      </BrowserRouter>
+      </HashRouter>
     )
   }
 }
